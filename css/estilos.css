@@ -1,0 +1,144 @@
+/* Aula inicial :D */
+/*comando de reset, não permite que o html/css coloque propriedades automaticamente*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} 
+
+body {
+    background-image: url('https://images.unsplash.com/photo-1536859355448-76f92ebdc33d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=800');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-attachment:  fixed;
+    font-family: 'Source Code Pro', monospace;
+    height: 100vh; /*garantir que a altura do body seja sempre a mesma*/
+    font-size: 12px;
+  }
+
+/*tag com @ funciona como se fossem ifs no css*/
+/*se a tela tiver pelo menos 400 px vai carregar estes estilos */
+/* a partir de 400px de largura o html muda os estilos declarados na media*/
+@media (min-width: 400px) {
+  body {
+    font-size: 14px;
+  }
+}
+/*essas medias são também conhecidas como breakpoints*/
+
+@media (min-width: 600px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    font-size: 20px;
+  }
+}
+
+  header {
+    height: 100vh; /*100% da altura da tela*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }/*as propriedades align-itens e justify-content só funcionam por causa da propriedade flex*/
+  
+  .menu {
+    background-color: #FF7F50;
+    position: fixed;
+    width: 100vw; /*ocupa 100% da largura da tela*/
+    top: 0; /*só funciona se um position estiver declarado, colocou a barra nav para cima da tela*/
+  }
+  
+  .menu ul {
+    display: flex; /*coloca os elementos lado a lado*/
+    justify-content: space-around; /*coloca espaços em volta da coluna inteira*/
+  }
+  
+  .menu li {
+    list-style: none;
+  }
+  
+  .menu a {
+    display: block; /*utilizado para aumentar a area de clique do link sem que o padding extravaze para fora*/
+    padding: 10px 20px;
+  }
+
+  a {
+    color: #000000;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline; 
+  }
+  
+  .site-title,
+  .site-subtitle {
+    text-align: center;
+    color: #F0FFF0;
+  }
+
+  .site-title {
+    font: 4em; /*4 vezes o tamanho do body*/
+    font-family: 'Shadows Into Light', cursive;
+  }
+  
+  .site-subtitle {
+    font-style: italic;
+    font-family: 'Jost', sans-serif;
+    font-size: 25px;
+  }
+
+  .portfolio {
+    padding: 2em;
+    height: 100vh;
+  }
+
+  .portfolio h2 {
+    font-family: 'Jost', sans-serif;
+    color: whitesmoke;
+    font-size: 1.5em;
+    text-align: center;
+    margin: 1.5em;
+  }
+
+
+  /*seleciona apenas a classe grid que está dentro da classe portfólio*/
+  .portfolio .grid {
+    display: grid;
+    gap: 2em; /*propriedade utilizada para dar distância entre os elementos, somente com o display grid*/
+    color: whitesmoke;
+  }
+
+  @media (min-width: 560px) {
+    .portfolio .grid {
+      grid-template-columns: 240px 240px; 
+    }   
+  }
+
+  @media (min-width: 860px) {
+    .portfolio .grid {
+      grid-template-columns: repeat(3, 240px);  /*3 colunas de 240px*/
+      align-content: center;
+      justify-content: center;
+      height: calc(100vh - 8em - 48px);
+    }   
+  }
+
+  .portfolio figure {
+    text-align: center;
+  }
+
+  .img-portfolio {
+    height: 180px;
+    width: 240px;
+    object-fit: cover;
+    border-radius: 15px ;
+  }
+
+
+
+  
