@@ -6,23 +6,24 @@
     <title>Bárbara Costa Baron</title>
     <link rel="stylesheet" href="./css/estilos.css">
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;1,300&family=Shadows+Into+Light&family=Source+Code+Pro:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0ecc30e0b0.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <nav class="menu">
           <ul>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Projetos</a></li>
-            <li><a href="#">Contato</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#portfolio">Projetos</a></li>
+            <li><a href="#contatos">Contatos</a></li>
           </ul>
         </nav>
-        <div>
+        <div class="titulos">
           <h1 class="site-title">Bárbara Costa Baron</h1>
           <h2 class="site-subtitle">{front-end developer}</h2>
-          <h2 class="site-subtitle">{fitness instructor}</h2>
+          <h2 class="site-subtitle">{sports instructor}</h2>
         </div>
       </header>
-      <section class="portfolio">
+      <section id="portfolio" class="portfolio">
         <h2>Projetos</h2>
         <div class="grid">
           <figure>
@@ -36,9 +37,18 @@
           <figure>
             <img class="img-portfolio" src="./img/sports-instructor-creditos-vince-fleming-unsplash.jpg" alt="sports-instructor">
             <figcaption>{sports instructor}</figcaption>
-          </figure>
-         
+          </figure>         
         </div>
+      </section>
+      <section id="contatos" class="contatos">
+        <h2>Contatos</h2>
+        <div class="grid icons"> <!-- duas classes numa mesma tag-->
+          <a target="_blank" href="https://github.com/babixbaron"><i class="fab fa-github"></i></a>
+          <a target="_blank" href="https://twitter.com/babixbaron"><i class="fab fa-twitter"></i></a>
+          <a target="_blank" href="https://www.linkedin.com/in/barbaracostabaron/"><i class="fab fa-linkedin-in"></i></a>
+          <a target="_blank" href="https://www.instagram.com/babixbaron/>"><i class="fab fa-instagram"></i></a>
+        </div>
+
       </section>
 </body>
 </html>

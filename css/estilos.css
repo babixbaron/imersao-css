@@ -50,6 +50,7 @@ body {
     position: fixed;
     width: 100vw; /*ocupa 100% da largura da tela*/
     top: 0; /*só funciona se um position estiver declarado, colocou a barra nav para cima da tela*/
+    z-index: 1; /*muda a prioridade do eixo z, não deixando as animações se sobreporem no site*/
   }
   
   .menu ul {
@@ -64,15 +65,17 @@ body {
   .menu a {
     display: block; /*utilizado para aumentar a area de clique do link sem que o padding extravaze para fora*/
     padding: 10px 20px;
+    transition: background-color 1s, color 1s; /* sempre que usar propriedades de hover é bom especificar uma transition para o efeito*/
+  }
+
+  .menu a:hover {
+    background-color: black;
+    color: salmon;    
   }
 
   a {
     color: #000000;
     text-decoration: none;
-  }
-  
-  a:hover {
-    text-decoration: underline; 
   }
   
   .site-title,
@@ -82,7 +85,7 @@ body {
   }
 
   .site-title {
-    font: 4em; /*4 vezes o tamanho do body*/
+    font-size: 3em; /*4 vezes o tamanho do body*/
     font-family: 'Shadows Into Light', cursive;
   }
   
@@ -92,19 +95,19 @@ body {
     font-size: 25px;
   }
 
+  .contatos,
   .portfolio {
     padding: 2em;
-    height: 100vh;
+    min-height: 100vh;
   }
 
+  .contatos h2,
   .portfolio h2 {
     font-family: 'Jost', sans-serif;
     color: whitesmoke;
     font-size: 1.5em;
-    text-align: center;
     margin: 1.5em;
   }
-
 
   /*seleciona apenas a classe grid que está dentro da classe portfólio*/
   .portfolio .grid {
@@ -136,9 +139,32 @@ body {
     height: 180px;
     width: 240px;
     object-fit: cover;
-    border-radius: 15px ;
+    border-radius: 15px;
+    transition: transform 700ms;
   }
 
+  .img-portfolio:hover {
+    transform: scale(1.2)
+  }
 
+  .contatos a {
+    color: whitesmoke;
+    font-size: 4em;
+    margin-left: 0.6em;
+    margin-right: 0.6em;
+    transition: text-shadow 1s;
+  }
+  
+  .contatos .icons {
+    text-align: center;
+  }
+
+  .contatos a:active, /*para ativar o hover no mobile*/
+  .contatos a:hover {
+    text-decoration: none;
+    text-shadow: 3px 3px 10px whitesmoke;
+  }
+
+  
 
   
