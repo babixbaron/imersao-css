@@ -6,90 +6,46 @@
     <title>Bárbara Costa Baron</title>
     <link rel="stylesheet" href="./css/estilos.css">
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;1,300&family=Shadows+Into+Light&family=Source+Code+Pro:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/0ecc30e0b0.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <nav class="menu">
-          <ul class="container">
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#portfolio">Projetos</a></li>
-            <li><a href="#contatos">Contatos</a></li>
+          <ul>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Projetos</a></li>
+            <li><a href="#">Contato</a></li>
           </ul>
         </nav>
-        <div class="titulos">
+        <div>
           <h1 class="site-title">Bárbara Costa Baron</h1>
           <h2 class="site-subtitle">{front-end developer}</h2>
           <h2 class="site-subtitle">{sports instructor}</h2>
         </div>
       </header>
-      <section id="sobre"class="sobre container">
-        <h2>Sobre</h2>
-        <figure class="img-sobre">
-          <img src="./img/sobre-foto.png" alt="Bárbara Costa Baron">
-        </figure>
-
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero, delectus ab mollitia quibusdam numquam sed eaque qui animi eligendi cupiditate architecto provident dicta quidem, quaerat in tempora rem amet fuga.
-        </p>
-        <p>
-          Odit deleniti fuga quisquam ex natus fugiat tempore eius adipisci quo ad dolore quasi ratione molestias nisi illo tempora ipsam voluptatem ut autem optio, minus mollitia itaque aspernatur? Sunt, nesciunt.
-        </p>
-        <p>
-          Eaque aspernatur, omnis sint ipsum, illo in voluptates porro expedita mollitia dolor dolorem quidem obcaecati incidunt odit autem vero itaque id? Minus vero deserunt vitae repellendus, vel asperiores magni eius.
-        </p>
-        <p>
-          Este site foi desenvolvido durante a <a href="https://www.alura.com.br/imersao-css">Imersão CSS da Alura :)</a>.
-        </p>
-      </section>
-      <section id="portfolio" class="portfolio container">
+      <section class="portfolio">
         <h2>Projetos</h2>
         <div class="grid">
-          <div class="flip-card">
-            <div class="card">
-              <figure class="card-front">
-                <img class="img-portfolio" src='./img/web-design-credito-caleidico-unsplash.jpg' alt="web-developer">
-              </figure>
-              <div class="card-back">
-                <h3>{web-developer}</h3>
-              </div>
-            </div>
-          </div>                   
-          <div class="flip-card">
-            <div class="card">
-              <figure class="card-front">
-                <img class="img-portfolio" src="./img/front-end-student-creditos-arnold-francisca-unsplash.jpg" alt="front-end-student">
-              </figure>
-              <div class="card-back">
-                <h3>{front-end student}</h3>
-              </div>
-            </div>
-          </div>
-          <div class="flip-card">
-            <div class="card">
-              <figure class="card-front">
-                <img class="img-portfolio" src="./img/sports-instructor-creditos-vince-fleming-unsplash.jpg" alt="sports-instructor">
-              </figure>
-              <div class="card-back">
-                <h3>{sports instructor}</h3>
-              </div>
-          </div>     
-        </div>     
-       </div>
-      </section>
-      <section id="contatos" class="contatos container">
-        <h2>Contatos</h2>
-        <div class="grid icons"> <!-- duas classes numa mesma tag-->
-          <a target="_blank" href="https://github.com/babixbaron"><i class="fab fa-github"></i></a>
-          <a target="_blank" href="https://twitter.com/babixbaron"><i class="fab fa-twitter"></i></a>
-          <a target="_blank" href="https://www.linkedin.com/in/barbaracostabaron/"><i class="fab fa-linkedin-in"></i></a>
-          <a target="_blank" href="https://www.instagram.com/babixbaron/>"><i class="fab fa-instagram"></i></a>
+          <figure>
+            <img class="img-portfolio" src='./img/web-design-credito-caleidico-unsplash.jpg' alt="web-developer">
+            <figcaption>{web-developer}</figcaption>
+          </figure>
+          <figure>
+            <img class="img-portfolio" src="./img/front-end-student-creditos-arnold-francisca-unsplash.jpg" alt="front-end-student">
+            <figcaption>{front-end student}</figcaption>
+          </figure>
+          <figure>
+            <img class="img-portfolio" src="./img/sports-instructor-creditos-vince-fleming-unsplash.jpg" alt="sports-instructor">
+            <figcaption>{sports instructor}</figcaption>
+          </figure>         
         </div>
       </section>
-      <section>
-        <div class="copyright">
-          <p>Copyright 2020 by Bárbara</p>
-      </div>
+      <section id="contato" class="contato">
+        <h2>Contato</h2>
+        <div class="grid-icons">
+          <a target="_blank" href="https://github.com/babixbaron">Github</a>
+          <a target="_blank" href="https://twitter.com/babixbaron">Twitter</a>
+          <a target="_blank" href="https://www.linkedin.com/in/barbaracostabaron/">Linkedin</a>
+        </div>
       </section>
 </body>
 </html>
