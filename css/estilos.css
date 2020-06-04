@@ -7,7 +7,7 @@
 } 
 
 body {
-    background-color: #FFFF00;
+    background: linear-gradient(#FFFACD, gold);
    /* background-image: url('https://images.unsplash.com/photo-1536859355448-76f92ebdc33d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=800');*/
     background-size: auto;
     background-repeat: no-repeat;
